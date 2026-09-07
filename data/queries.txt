@@ -1,0 +1,29 @@
+# Query set used by src/benchmark.py and for qualitative comparison.
+# Mixed on purpose: some are semantic, some hinge on an exact keyword
+# (IAM, SigV4, 403, HNSW) where BM25 should pull its weight and pure
+# vector search tends to drift.
+
+How does an agent decide when to stop calling tools?
+Who owns the control flow in a graph-based agent framework?
+What does Bedrock AgentCore give me out of the box?
+How do I stop an agent loop from running forever?
+What is HNSW and how do I tune it?
+Does cosine similarity care about vector magnitude?
+When is exact k-NN better than approximate search?
+What happens if the embedding dimension does not match the mapping?
+Can I run a vector store without provisioning any infrastructure?
+Is Chroma free to self-host?
+What happens to my data if the machine running Chroma dies?
+How do I inspect what is inside a Chroma collection?
+Why can OpenSearch do keyword and vector search in one query?
+Where do I see cluster health and shard status?
+Why does my hybrid query fail?
+I am getting a 403 from my Serverless collection
+Should I sign requests with aoss or es?
+Does an idle collection still cost money?
+Which vector store does Bedrock Knowledge Bases use by default?
+Why do I get AccessDeniedException when calling a model?
+How many dimensions does Titan Text Embeddings V2 return?
+How should I choose a chunk size?
+Why does semantic search miss exact acronyms like IAM?
+How do I merge keyword and vector results without normalization?
