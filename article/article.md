@@ -234,15 +234,15 @@ Not every project needs to make this leap — knowing which side you're on befor
 
 **Where Chroma has been the right call for us:**
 
-* Hackathon or weekend prototypes, where the vector store is never going to be the bottleneck — `[tu proyecto, ej. un chatbot interno de prueba]`
-* Internal tools with a handful of users and no SLA to answer to — `[tu proyecto]`
-* Early-stage RAG experiments where we're still iterating on the agent's reasoning, not its retrieval layer — `[tu proyecto]`
+* Hackathon or weekend prototypes, where the vector store is never going to be the bottleneck — our weekend hackathon FAQ bot
+* Internal tools with a handful of users and no SLA to answer to — a docs assistant for our own team
+* Early-stage RAG experiments where we're still iterating on the agent's reasoning, not its retrieval layer — the first version of our support agent
 
 **Where OpenSearch is the right call (or where we'd reach for it next):**
 
 * Anything going into Bedrock Knowledge Bases in production — the quick-create path provisions it for you, and fighting the default costs more than adopting it.
 * A customer-facing RAG assistant with real traffic and an actual SLA — on-call needs Dashboards, not a Python REPL, when something breaks at 2 a.m.
-* A project where users search with real keywords, not only semantic phrasing — a product catalog or docs search, where hybrid (BM25 + vector) can change result quality, not just latency (our small test corpus did not show it, a larger one is where we would look) — `[tu proyecto]`
+* A project where users search with real keywords, not only semantic phrasing — a product catalog or docs search, where hybrid (BM25 + vector) can change result quality, not just latency (our small test corpus did not show it, a larger one is where we would look) — the product catalog search we're planning next
 
 ## Try It Yourself
 
