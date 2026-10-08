@@ -1,9 +1,16 @@
+# Secrets and local config
 .env
+
+# Local data produced by the notebooks
+chroma_db/
+data/cache/
+
+# Python
 .venv/
 venv/
 __pycache__/
-*.py[cod]
-chroma_data/
-data/embeddings.jsonl
-.DS_Store
+*.pyc
+
+# Jupyter
+*.ipynb_checkpoints
 .ipynb_checkpoints/
