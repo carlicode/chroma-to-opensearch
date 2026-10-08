@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="800" height="240"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="240" class="bg"/>
+<rect x="20" y="50" width="120" height="58" rx="8" class="box"/><text x="80" y="75" text-anchor="middle" class="b">Amazon S3</text><text x="80" y="93" text-anchor="middle" class="sm">PDFs, docs</text>
+<rect x="170" y="50" width="160" height="58" rx="8" class="cbox"/><text x="250" y="75" text-anchor="middle" class="b">Ingestion job</text><text x="250" y="93" text-anchor="middle" class="sm">chunk + embed (Titan)</text>
+<rect x="360" y="50" width="190" height="58" rx="8" class="obox"/><text x="455" y="75" text-anchor="middle" class="b">OpenSearch Serverless</text><text x="455" y="93" text-anchor="middle" class="sm">quick-create vector store</text>
+<rect x="360" y="150" width="190" height="48" rx="8" class="box"/><text x="455" y="179" text-anchor="middle">Claude on Bedrock</text>
+<rect x="600" y="140" width="180" height="58" rx="8" class="cbox"/><text x="690" y="164" text-anchor="middle" class="b">Your agent</text><text x="690" y="183" text-anchor="middle" class="mono">RetrieveAndGenerate</text>
+<path d="M140 79 H166" class="arr" marker-end="url(#ah)"/>
+<path d="M330 79 H356" class="arr" marker-end="url(#ah)"/>
+<path d="M596 158 C 580 100, 570 82, 554 80" class="arr" marker-end="url(#ah)"/>
+<path d="M596 174 H554" class="arr" marker-end="url(#ah)"/>
+<text x="585" y="60" class="sm">1. retrieve chunks</text>
+<text x="585" y="222" class="sm">2. generate answer</text>
+<text x="20" y="140" class="sm">Steps 1–2 happen inside</text><text x="20" y="157" class="sm">one Bedrock API call.</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="420" fill="#f5f7f9"/>
+<text x="40" y="72" class="h" style="font-size:38px">From <tspan class="c">Chroma</tspan> to <tspan class="o">OpenSearch</tspan></text>
+<text x="40" y="106" style="font-size:17px;fill:#566575">Taking vector search from a laptop prototype to production on AWS</text>
+
+<rect x="40" y="145" width="270" height="235" rx="12" class="cbox"/>
+<text x="60" y="173" class="lbl c">PROTOTYPE</text>
+<text x="60" y="200" class="h" style="font-size:22px">Chroma</text>
+<rect x="60" y="218" width="230" height="36" rx="8" class="box"/><text x="175" y="241" text-anchor="middle" class="mono">agent.py</text>
+<rect x="60" y="270" width="230" height="36" rx="8" class="box"/><text x="175" y="293" text-anchor="middle">Chroma, in-process</text>
+<rect x="60" y="322" width="230" height="36" rx="8" class="box"/><text x="175" y="345" text-anchor="middle" class="mono">./chroma_db/</text>
+<path d="M175 254 V266" class="arr" marker-end="url(#ah)"/><path d="M175 306 V318" class="arr" marker-end="url(#ah)"/>
+
+<path d="M322 270 C 370 215, 440 215, 482 262" class="arr-o dash" marker-end="url(#aho)"/>
+<text x="402" y="210" text-anchor="middle" class="h" style="font-size:15px">the leap</text>
+
+<rect x="490" y="145" width="270" height="235" rx="12" class="obox"/>
+<text x="510" y="173" class="lbl o">PRODUCTION</text>
+<text x="510" y="200" class="h" style="font-size:22px">OpenSearch on AWS</text>
+<rect x="510" y="218" width="72" height="72" rx="8" class="box"/><rect x="589" y="218" width="72" height="72" rx="8" class="box"/><rect x="668" y="218" width="72" height="72" rx="8" class="box"/>
+<text x="546" y="236" text-anchor="middle" class="sm">node 1</text><text x="625" y="236" text-anchor="middle" class="sm">node 2</text><text x="704" y="236" text-anchor="middle" class="sm">node 3</text>
+<rect x="518" y="248" width="26" height="30" rx="4" class="obox"/><rect x="548" y="248" width="26" height="30" rx="4" class="cbox"/>
+<rect x="597" y="248" width="26" height="30" rx="4" class="obox"/><rect x="627" y="248" width="26" height="30" rx="4" class="cbox"/>
+<rect x="676" y="248" width="26" height="30" rx="4" class="obox"/><rect x="706" y="248" width="26" height="30" rx="4" class="cbox"/>
+<rect x="510" y="308" width="46" height="22" rx="11" class="box"/><text x="533.0" y="323" text-anchor="middle" class="sm">IAM</text><rect x="562" y="308" width="90" height="22" rx="11" class="box"/><text x="607.0" y="323" text-anchor="middle" class="sm">Dashboards</text>
+<rect x="510" y="338" width="108" height="22" rx="11" class="box"/><text x="564.0" y="353" text-anchor="middle" class="sm">Hybrid search</text><rect x="624" y="338" width="72" height="22" rx="11" class="box"/><text x="660.0" y="353" text-anchor="middle" class="sm">Bedrock</text>
+</svg>

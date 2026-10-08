@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="320" class="bg"/>
+<rect x="40" y="40" width="420" height="260" rx="12" class="box dash"/>
+<text x="60" y="66" class="sm">your laptop · one Python process</text>
+<rect x="70" y="82" width="360" height="44" rx="8" class="cbox"/><text x="250" y="109" text-anchor="middle">Your RAG agent <tspan class="mono">agent.py</tspan></text>
+<rect x="70" y="146" width="360" height="76" rx="8" class="cbox"/><text x="250" y="168" text-anchor="middle" class="b">Chroma</text>
+<rect x="90" y="182" width="150" height="28" rx="6" class="box"/><text x="165" y="200" text-anchor="middle" class="sm">HNSW index</text>
+<rect x="260" y="182" width="150" height="28" rx="6" class="box"/><text x="335" y="200" text-anchor="middle" class="sm">default embedding fn</text>
+<rect x="70" y="242" width="360" height="40" rx="8" class="box"/><text x="250" y="266" text-anchor="middle" class="mono">./chroma_db/  (local folder)</text>
+<path d="M250 126 V142" class="arr" marker-end="url(#ah)"/><path d="M250 222 V238" class="arr" marker-end="url(#ah)"/>
+
+<text x="500" y="70" class="lbl c">WHAT YOU DON'T NEED</text>
+<circle cx="506" cy="106" r="5" class="c"/><text x="520" y="111">No cluster or server to provision</text>
+<circle cx="506" cy="146" r="5" class="c"/><text x="520" y="151">No IAM policy, no auth flow</text>
+<circle cx="506" cy="186" r="5" class="c"/><text x="520" y="191">Embeddings computed for you</text>
+<circle cx="506" cy="226" r="5" class="c"/><text x="520" y="231">No schema to declare up front</text>
+<text x="500" y="276" class="sm">pip install chromadb, and you're querying.</text>
+</svg>

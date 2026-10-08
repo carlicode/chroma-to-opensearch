@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="800" height="310"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="310" class="bg"/>
+<rect x="20" y="120" width="170" height="56" rx="8" class="cbox"/><text x="105" y="143" text-anchor="middle" class="b">Query</text><text x="105" y="162" text-anchor="middle" class="sm">"error E-1042 on restart"</text>
+<rect x="235" y="40" width="185" height="76" rx="8" class="box"/><text x="327" y="63" text-anchor="middle" class="b">BM25 on text field</text><text x="327" y="82" text-anchor="middle" class="sm">exact terms: "E-1042"</text><text x="327" y="102" text-anchor="middle" class="mono">9.1 · 7.4 · 3.2</text>
+<rect x="235" y="180" width="185" height="76" rx="8" class="obox"/><text x="327" y="203" text-anchor="middle" class="b">k-NN on embedding</text><text x="327" y="222" text-anchor="middle" class="sm">meaning: restart, service</text><text x="327" y="242" text-anchor="middle" class="mono">0.88 · 0.84 · 0.71</text>
+<rect x="460" y="110" width="165" height="76" rx="8" class="cbox"/><text x="542" y="133" text-anchor="middle" class="b">Search pipeline</text><text x="542" y="152" text-anchor="middle" class="sm">min-max normalize to 0–1</text><text x="542" y="171" text-anchor="middle" class="sm">BM25 0.3 · vector 0.7</text>
+<rect x="650" y="80" width="135" height="136" rx="8" class="box"/><text x="665" y="104" class="b">Final ranking</text>
+<text x="665" y="130" class="sm">1. E-1042 error doc</text><text x="665" y="152" class="sm">2. Restart guide</text><text x="665" y="174" class="sm">3. Startup issues</text><text x="665" y="196" class="sm">4. Error code list</text>
+<path d="M190 140 C 210 110, 210 80, 231 78" class="arr" marker-end="url(#ah)"/>
+<path d="M190 156 C 210 186, 210 216, 231 218" class="arr" marker-end="url(#ah)"/>
+<path d="M420 78 C 440 80, 440 130, 456 138" class="arr" marker-end="url(#ah)"/>
+<path d="M420 218 C 440 216, 440 166, 456 158" class="arr" marker-end="url(#ah)"/>
+<path d="M625 148 H646" class="arr" marker-end="url(#ah)"/>
+<text x="20" y="280" class="sm">BM25 catches exact codes, product names and acronyms. Vectors catch paraphrases.</text>
+<text x="20" y="298" class="sm">The pipeline puts both scores on the same scale before combining them. Illustrative scores.</text>
+</svg>

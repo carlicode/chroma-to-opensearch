@@ -27,6 +27,7 @@ notebooks/01..03         the three modules
 benchmark.py             p50/p95 latency + recall@3, per query kind, both stores
 infra/                   create_collection.sh / teardown.sh (AWS CLI v2)
 docs/study-notes.md      glossary + the "why" behind each step
+article/article.md        the article this repo accompanies (images in article/images/)
 ```
 
 ---
