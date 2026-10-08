@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="320" class="bg"/>
+<text x="30" y="28" class="b">Index "docs": 3 primary shards, 1 replica each, spread across 3 nodes</text>
+<rect x="30" y="45" width="230" height="150" rx="10" class="box"/><text x="145" y="70" text-anchor="middle" class="b">Node 1</text>
+<rect x="285" y="45" width="230" height="150" rx="10" class="box"/><text x="400" y="70" text-anchor="middle" class="b">Node 2</text>
+<rect x="540" y="45" width="230" height="150" rx="10" class="box"/><text x="655" y="70" text-anchor="middle" class="b">Node 3</text>
+<rect x="55" y="88" width="80" height="44" rx="6" class="obox"/><text x="95" y="115" text-anchor="middle" class="mono">P0</text><rect x="155" y="88" width="80" height="44" rx="6" class="cbox"/><text x="195" y="115" text-anchor="middle" class="mono">R2</text>
+<rect x="310" y="88" width="80" height="44" rx="6" class="obox"/><text x="350" y="115" text-anchor="middle" class="mono">P1</text><rect x="410" y="88" width="80" height="44" rx="6" class="cbox"/><text x="450" y="115" text-anchor="middle" class="mono">R0</text>
+<rect x="565" y="88" width="80" height="44" rx="6" class="obox"/><text x="605" y="115" text-anchor="middle" class="mono">P2</text><rect x="665" y="88" width="80" height="44" rx="6" class="cbox"/><text x="705" y="115" text-anchor="middle" class="mono">R1</text>
+<text x="145" y="160" text-anchor="middle" class="sm">primary 0 + copy of 2</text>
+<text x="400" y="160" text-anchor="middle" class="sm">primary 1 + copy of 0</text>
+<text x="655" y="160" text-anchor="middle" class="sm">primary 2 + copy of 1</text>
+<rect x="30" y="210" width="14" height="14" rx="3" class="obox"/><text x="52" y="222" class="sm">primary shard</text>
+<rect x="150" y="210" width="14" height="14" rx="3" class="cbox"/><text x="172" y="222" class="sm">replica: if Node 2 fails, R1 on Node 3 takes over for P1</text>
+<rect x="30" y="250" width="360" height="50" rx="8" class="obox"/>
+<text x="46" y="270" class="b">Managed domain</text><text x="46" y="288" class="sm">You choose node count, size and shards. You see all of this.</text>
+<rect x="410" y="250" width="360" height="50" rx="8" class="box"/>
+<text x="426" y="270" class="b">Serverless collection</text><text x="426" y="288" class="sm">AWS manages nodes and shards. You monitor through CloudWatch.</text>
+</svg>

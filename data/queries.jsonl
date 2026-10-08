@@ -1,0 +1,15 @@
+{"id": "q01", "kind": "keyword", "text": "What does error E-1042 mean?", "relevant_ids": ["kb-001"]}
+{"id": "q02", "kind": "keyword", "text": "PayFlow E-3007", "relevant_ids": ["kb-031"]}
+{"id": "q03", "kind": "keyword", "text": "Orbit MDM E-4115", "relevant_ids": ["kb-014"]}
+{"id": "q04", "kind": "keyword", "text": "CAB approval for production changes", "relevant_ids": ["kb-050", "kb-051"]}
+{"id": "q05", "kind": "keyword", "text": "Helix E-5003", "relevant_ids": ["kb-022"]}
+{"id": "q06", "kind": "semantic", "text": "I forgot my login secret and cannot get back in", "relevant_ids": ["kb-007"]}
+{"id": "q07", "kind": "semantic", "text": "I woke up with a fever and will not make it to the office today", "relevant_ids": ["kb-028"]}
+{"id": "q08", "kind": "semantic", "text": "My work computer was stolen at the airport, what now?", "relevant_ids": ["kb-015"]}
+{"id": "q09", "kind": "semantic", "text": "Where can I safely tell someone that a coworker keeps making me uncomfortable?", "relevant_ids": ["kb-040"]}
+{"id": "q10", "kind": "semantic", "text": "Does the company help pay for my fitness membership?", "relevant_ids": ["kb-042"]}
+{"id": "q11", "kind": "mixed", "text": "NovaVPN connects but internal sites do not resolve", "relevant_ids": ["kb-002"]}
+{"id": "q12", "kind": "mixed", "text": "¿Cómo pido días libres en Portal Atlas?", "relevant_ids": ["kb-027"]}
+{"id": "q13", "kind": "mixed", "text": "Got a strange email asking for my bank details, should I tell the SOC?", "relevant_ids": ["kb-045"]}
+{"id": "q14", "kind": "mixed", "text": "KeyRing says my vault is blocked after typing the wrong password", "relevant_ids": ["kb-011"]}
+{"id": "q15", "kind": "mixed", "text": "Can I get a dinner on a client trip refunded through PayFlow?", "relevant_ids": ["kb-033"]}

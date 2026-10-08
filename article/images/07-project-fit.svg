@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="800" height="340"><style>
+text{font-family:'Source Sans 3','Segoe UI',sans-serif;font-size:13px;fill:#17212b}
+.sm{font-size:11.5px;fill:#566575}
+.mono{font-family:'JetBrains Mono',Menlo,monospace;font-size:11px}
+.b{font-weight:700}
+.h{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;font-weight:700}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1.4px}
+.bg{fill:#ffffff}
+.box{fill:#ffffff;stroke:#d3dbe3;stroke-width:1.5}
+.cbox{fill:#fbead6;stroke:#c46a12;stroke-width:1.5}
+.obox{fill:#dce9f7;stroke:#1c5fa8;stroke-width:1.5}
+.arr{stroke:#566575;stroke-width:1.6;fill:none}
+.arr-o{stroke:#1c5fa8;stroke-width:1.8;fill:none}
+.dash{stroke-dasharray:6 4}
+.c{fill:#c46a12} .o{fill:#1c5fa8} .w{fill:#ffffff}
+</style>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#566575"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1c5fa8"/></marker>
+</defs>
+<rect width="800" height="340" class="bg"/>
+<rect x="30" y="20" width="360" height="270" rx="12" class="cbox"/>
+<text x="50" y="48" class="lbl c">STAY ON CHROMA</text><text x="50" y="74" class="h" style="font-size:17px">Prototypes and internal tools</text>
+<rect x="50" y="96" width="320" height="46" rx="8" class="box"/><text x="66" y="116">Hackathon and weekend prototypes</text><text x="66" y="133" class="sm">the vector store is never the bottleneck</text><rect x="50" y="154" width="320" height="46" rx="8" class="box"/><text x="66" y="174">Internal tools with a few users</text><text x="66" y="191" class="sm">no SLA to answer to</text><rect x="50" y="212" width="320" height="46" rx="8" class="box"/><text x="66" y="232">Early RAG experiments</text><text x="66" y="249" class="sm">still tuning the agent, not retrieval</text>
+<rect x="410" y="20" width="360" height="270" rx="12" class="obox"/>
+<text x="430" y="48" class="lbl o">MOVE TO OPENSEARCH</text><text x="430" y="74" class="h" style="font-size:17px">Production on AWS</text>
+<rect x="430" y="96" width="320" height="46" rx="8" class="box"/><text x="446" y="116">RAG inside Bedrock Knowledge Bases</text><text x="446" y="133" class="sm">quick-create provisions it for you</text><rect x="430" y="154" width="320" height="46" rx="8" class="box"/><text x="446" y="174">Customer-facing assistant with an SLA</text><text x="446" y="191" class="sm">on-call needs Dashboards at 2 a.m.</text><rect x="430" y="212" width="320" height="46" rx="8" class="box"/><text x="446" y="232">Keyword-heavy search</text><text x="446" y="249" class="sm">catalogs, docs, error codes: hybrid helps</text>
+<text x="400" y="320" text-anchor="middle" class="sm">Rule of thumb: move when the vector store, not the agent, becomes the bottleneck.</text>
+</svg>
