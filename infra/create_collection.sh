@@ -87,7 +87,7 @@ GROUP_ID="$(aoss batch-get-collection-group --names "$GROUP" --query 'collection
 if [[ -n "$GROUP_ID" && "$GROUP_ID" != "None" ]]; then
   echo "collection group exists ($GROUP_ID), skipping"
 else
-  aoss create-collection-group --name "$GROUP" --generation NEXTGEN --standby-replicas DISABLED \
+  aoss create-collection-group --name "$GROUP" --generation NEXTGEN --standby-replicas ENABLED \
     --capacity-limits "minIndexingCapacityInOCU=0,maxIndexingCapacityInOCU=${MAX_OCU},minSearchCapacityInOCU=0,maxSearchCapacityInOCU=${MAX_OCU}" >/dev/null
   echo "created collection group $GROUP"
 fi

@@ -13,11 +13,10 @@ Embeddings V2 vectors (1024 dims)**, so the numbers we compare come from the dat
 different embedding models. Every number in the article is produced by the code here; nothing is
 hardcoded.
 
-> **Verification status (read this first).** Everything that runs locally was executed while
-> building the repo (see [What we ran locally](#what-we-ran-locally)). The AWS parts (Bedrock,
-> OpenSearch Serverless, the `infra/` scripts against a real account) are written and linted
-> but **have not been run against AWS yet**. Until they are, we do not claim any AWS result,
-> including whether the server-side `hybrid` query works on Serverless.
+> **Verification status.** Everything was executed for real on 2026-10-08, locally and against an
+> OpenSearch Serverless NextGen collection in `us-east-1` with Titan V2 embeddings. Results and the
+> things only a real run could reveal are in [docs/aws-run-2026-10-08.md](docs/aws-run-2026-10-08.md).
+> The IAM policy below was exercised by a broader user, so it is still not validated as minimal.
 
 ```
 data/docs.jsonl          51 short IT/HR chunks (English + Spanish)
